@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sandhya Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Sandhya</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="themeToggle">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero" data-aos="fade-up">
+  <h1>Hello, I'm <span>Sandhya</span></h1>
+  <p>Web Developer | Python | Java | UI/UX</p>
+
+  <button onclick="scrollToProjects()">View Projects</button>
+
+  <br><br>
+
+  <a href="resume.pdf" download>
+    <button>Download Resume</button>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I am a passionate developer building modern web applications.</p>
+
+  <div class="skills">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Python</div>
+    <div>Java</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" data-aos="zoom-in">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+
+    <div class="card" data-aos="flip-left">
+      <h3>LMS Portal</h3>
+      <p>Online course management system</p>
+      <a href="https://github.com/yourusername/lms" target="_blank">View Code</a>
+    </div>
+
+    <div class="card" data-aos="flip-left">
+      <h3>Resume Analyzer</h3>
+      <p>AI-based resume tool</p>
+      <a href="https://github.com/yourusername/resume" target="_blank">View Code</a>
+    </div>
+
+    <div class="card" data-aos="flip-left">
+      <h3>Portfolio</h3>
+      <p>Personal website</p>
+      <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<form id="contact-form">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+  <p>Email me directly:</p>
+<a href="mailto:sandhyamurugan0508@gmail.com">
+  <button>Send Email</button>
+</a>
+</form>
+
+<p id="success-msg" style="display:none; color:lightgreen;">
+  ✅ Message sent successfully!
+</p>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sandhya | All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
